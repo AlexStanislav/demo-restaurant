@@ -1,0 +1,61 @@
+.home-menu {
+    padding: 2rem;
+}
+
+.hooper {
+    width: 100%;
+    height: fit-content;
+    padding: 15px 30px 50px 30px;
+}
+
+.meal-image {
+    width: 50%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.hooper-slide {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.meal-info {
+    width: 45%;
+    padding: 0 2rem;
+    h3 {
+        font-family: "IndieFlower";
+        font-size: 3rem;
+        color: $red;
+        margin: 5px;
+    }
+    h4 {
+        margin-top: -5px;
+        color: $red;
+    }
+}
+.meal-ingredients {
+    color: $gray;
+    font-size: 0.8rem;
+}
+.meal-description {
+    text-align: justify;
+    font-family: "IndieFlower";
+    font-size: 1.3rem;
+    color: $dark;
+}
+
+.meal-alergens {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    span {
+        color: $red;
+    }
+}
+
+.meal-price {
+    font-size: 3rem;
+    color: $red;
+    margin: 0px;
+}

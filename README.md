@@ -1,5 +1,5 @@
 # demo-restaurant
-
+A small SPA demo for a restaurant made using Vue2, JwPagination and Popper
 ## Project setup
 ```
 npm install
