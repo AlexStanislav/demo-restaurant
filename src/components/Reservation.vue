@@ -106,6 +106,7 @@ export default {
 .reservation-content {
   display: flex;
   gap: 5rem;
+  margin: 4rem 0;
 }
 
 .reservation-text-container {

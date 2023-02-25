@@ -1,7 +1,7 @@
 <template>
   <div class="menu">
     <div
-      class="header-image"
+      class="header-image header-image-menu"
       :style="{
         backgroundImage: `url(${require('@/assets/img/background.jpg')})`,
       }"
@@ -61,14 +61,21 @@ export default {
   flex-flow: row wrap;
 }
 
+.header-image-menu{
+  margin-bottom: 5rem;
+}
+
+.menu-container{
+  padding: 3rem 0 1rem 0;
+}
+
 .menu-item{
-  margin: 1rem 0;
   display: flex;
   gap: 1rem;
   border-bottom: 1px solid $dark;
   padding-bottom: 1rem;
-  width: 48%;
-  margin: 1rem 0.5rem;
+  width: 45%;
+  margin: 2rem;
   h3{
     color: $brown;
     text-align: left;
@@ -106,7 +113,7 @@ export default {
 }
 
 .pagination{
-  margin: auto !important;
+  margin: 1rem auto 3rem auto !important;
   font-family: 'IndieFlower';
   font-size: 1.5rem;
   font-weight: bold;
