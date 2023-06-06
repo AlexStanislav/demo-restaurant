@@ -1,0 +1,74 @@
+.home-about-content {
+    display: flex;
+    align-items: center;
+    padding: 1%;
+    gap: 1rem;
+    height: 100vh;
+    background: var(--second-color);
+}
+
+.home-about {
+    width: 50%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    color: var(--primary-color);
+}
+
+.home-about h2 {
+    font-size: 4rem;
+    font-family: "Poppins Semi Bold";
+}
+
+.home-about p {
+    font-size: 1.2rem;
+    text-align: justify;
+    font-family: "Poppins Italic";
+}
+
+.home-about-content .home-img {
+    background-image: url("@/assets/img/alexandru-bogdan-ghita-UeYkqQh4PoI-unsplash(ribs).jpg");
+    width: 50vw;
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    border-radius: var(--border-radius);
+    transition: all 1s ease-in-out !important;
+    opacity: 0;
+    left: -100px;
+    position: relative;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 1024px) {
+    .home-about-content{
+        width: 100vw;
+        height: fit-content;
+        display: initial;
+        box-sizing: border-box;
+    }
+
+    .home-about-content .home-img{
+        width: 90vw;
+        margin: 1rem auto;
+        height: 50vh;
+    }
+
+    .home-about{
+        width: 100vw;
+        box-sizing: border-box;
+    }
+
+    .home-about h2{
+        font-size: 2rem;
+        margin: 0.2rem 0;
+    }
+
+    .home-about p{
+        font-size: 1rem;
+    }
+}

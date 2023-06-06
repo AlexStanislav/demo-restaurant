@@ -1,0 +1,22 @@
+.home-special-content {
+    padding: 1% 1% 5% 1%;
+    background: var(--primary-color);
+    box-sizing: border-box;
+}
+
+.home-special-content h2 {
+    font-size: 4rem;
+    font-family: "Poppins Semi Bold";
+    text-align: center;
+    color: white;
+}
+
+.home-specials {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    top: -100px;
+    position: relative;
+    opacity: 0;
+    transition: all 1s ease-in-out !important;
+}

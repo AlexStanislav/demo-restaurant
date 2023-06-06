@@ -1,0 +1,12 @@
+@import './base.css';
+@import './header.css';
+@import './home-content.css';
+@import './home-about.css';
+@import './home-specials.css';
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
