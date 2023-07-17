@@ -2,7 +2,10 @@
 <template>
   <div class="home">
     <div class="home-bg" v-if="store.isMobile()"></div>
-    <div class="top-wrapper">
+    <div
+      class="top-wrapper"
+      :style="{ backgroundImage: `url(${bgURL})` }"
+    >
       <div class="overlay"></div>
     </div>
     <div class="content-container">
@@ -129,6 +132,8 @@ import MenuItem from "@/components/MenuItem.vue";
 import Card from "primevue/card";
 import InputText from "primevue/inputtext";
 import Calendar from "primevue/calendar";
+
+let bgURL = new URL("../assets/img/background.jpg", import.meta.url);
 
 const store = useAppStore();
 
