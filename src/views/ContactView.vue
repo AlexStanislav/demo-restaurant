@@ -1,6 +1,6 @@
 <template>
   <div class="contact">
-    <div class="contact-bg"></div>
+    <div class="contact-bg" :style="{ backgroundImage: `url(${bgURL})` }"></div>
     <div class="contact-form-wrapper">
       <div class="contact-form">
         <h1>Contact Us</h1>
@@ -65,6 +65,8 @@ import Icons from "../assets/modules/Icons";
 import SvgIcon from "../components/SvgIcon.vue";
 let form = { name: "", email: "", message: "" };
 
+let bgURL = new URL("../assets/img/background2.jpg", import.meta.url);
+
 function submitForm() {
   // Code to submit the form data goes here
   console.log(this.form);
@@ -95,7 +97,6 @@ function submitForm() {
   width: 100%;
   height: 100vh;
   position: absolute;
-  background-image: url("./src/assets/img/background2.jpg");
   background-attachment: fixed;
   opacity: 0.6;
   z-index: 1;

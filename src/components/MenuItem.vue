@@ -2,7 +2,7 @@
   <div class="menu-item">
     <Card class="menu-card">
       <template #header>
-        <img :src="`./src/assets/img/${menuItem.image}.jpg`" alt="" />
+        <img :src="menuImage" alt="" />
       </template>
       <template #title>{{ menuItem.name }}</template>
       <template #subtitle>{{ menuItem.price }}$</template>
@@ -26,7 +26,7 @@ const store = useAppStore();
 
 const emit = defineEmits(["addItem"]);
 
-defineProps({
+const props = defineProps({
   menuItem: {
     type: Object,
     default: () => {
@@ -38,6 +38,8 @@ defineProps({
     },
   },
 });
+
+let menuImage = new URL(`../assets/img/${props.menuItem.image}.jpg`, import.meta.url);
 
 function addMenuItem(item){
   store.addItem(item)

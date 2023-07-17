@@ -60,7 +60,7 @@
     </div>
     <div
       class="home-locations"
-      :style="{ backgroundImage: `url(./src/assets/img/background2.jpg)` }"
+      :style="{ backgroundImage: `url(${bg2URL})` }"
     >
       <div class="overlay"></div>
       <div
@@ -134,6 +134,7 @@ import InputText from "primevue/inputtext";
 import Calendar from "primevue/calendar";
 
 let bgURL = new URL("../assets/img/background.jpg", import.meta.url);
+let bg2URL = new URL("../assets/img/background2.jpg", import.meta.url);
 
 const store = useAppStore();
 

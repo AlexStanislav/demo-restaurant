@@ -57,7 +57,7 @@
         >
           <img
             class="order-item-img"
-            :src="`./src/assets/img/${item.image}.jpg`"
+            :src="getImgUrl(item)"
             alt=""
           />
           <div class="order-item-content">
@@ -98,6 +98,10 @@ import Calendar from "primevue/calendar";
 import { computed, ref } from "vue";
 
 const store = useAppStore();
+
+function getImgUrl(item) {
+  return new URL(`../assets/img/${item.image}.jpg`, import.meta.url);
+}
 
 let formInfo = {
   name: "",
