@@ -2,10 +2,7 @@
 <template>
   <div class="home">
     <div class="home-bg" v-if="store.isMobile()"></div>
-    <div
-      class="top-wrapper"
-      :style="{ backgroundImage: `url(./src/assets/img/background.jpg)` }"
-    >
+    <div class="top-wrapper">
       <div class="overlay"></div>
     </div>
     <div class="content-container">

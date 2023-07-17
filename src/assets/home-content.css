@@ -8,6 +8,7 @@
     display: flex;
     align-items: center;
     position: absolute;
+    background-image: url("./src/assets/img/background.jpg");
 }
 
 .content-container{
