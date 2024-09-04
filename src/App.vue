@@ -214,6 +214,8 @@ footer {
 }
 
 .footer-nav a {
+  width: fit-content;
+  font-size: 1rem;
   text-decoration: none;
   color: var(--second-color);
 }

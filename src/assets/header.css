@@ -123,7 +123,7 @@ nav {
   .logo-container {
     width: fit-content;
     height: fit-content;
-    margin: 0;
+    margin: 0 0 0 2.5rem;
   }
 
   .logo-image {

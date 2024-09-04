@@ -16,11 +16,11 @@
           reiciendis distinctio ullam dolores minima. Lorem ipsum dolor sit amet
           consectetur adipisicing elit.
         </p>
-        <Button
+        <!-- <Button
           class="order-button"
           :class="{ 'button-visible': buttonIsVisible }"
           label="Order Now"
-        />
+        /> -->
         <Button
           class="specials-button"
           :class="{ 'button-visible': buttonIsVisible }"
