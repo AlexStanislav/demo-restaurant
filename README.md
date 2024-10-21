@@ -1,4 +1,6 @@
-# demo-restaurant
+# [Live preview](https://demo-restaurant.onrender.com)
+
+## Demo Restaurant
 
 A very simple SPA demo with routing for a restaurant created using [Vue 3](https://vuejs.org/) and [Pinia](https://pinia.vuejs.org/).
 
